@@ -1,7 +1,241 @@
-#menu
-{
+body {
+	font-family: 'Gill Sans';
+	background: linear-gradient(to right, #6a11cb, #2575fc);
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#menu {
+	font-family: 'Gill Sans';
+	display: flex;
+	justify-content: space-around;
 	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
+	background-color: #333;
+	z-index: 1000;
+	padding: 10px 0;
+}
+
+#menu ul {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#menu li {
+	list-style-type: none;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	display: block;
+	transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add border-radius transition */
+	border-radius: 10px; /* Add a default border-radius */
+}
+
+#menu li a:hover {
+	background-color: #555;
+	color: rgb(137, 235, 209);
+	border-radius: 15px; /* Increase border-radius on hover */
+}
+
+.section {
+	min-height: 100vh;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.5s;
+}
+
+#about {
+	background-image: url('https://translationconf.yiddish.paris/wp-content/uploads/2019/07/cropped-background_dark.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+	position: relative;
+	text-align: right;
+}
+
+.about-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 85%;
+	background-color: rgba(255, 255, 224, 0.9); /* Light brown background */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container img {
+	align-self: flex-start;
+	margin-left: 20px;
+}
+
+.about-container ul {
+	padding-right: 20px;
+	list-style-type: disc; /* Bullets for list items */
+	color: #333; /* Darker text for better readability */
+}
+
+#photos {
+	background-image: url('https://media.istockphoto.com/id/1169630303/photo/blue-textured-background.webp?b=1&s=170667a&w=0&k=20&c=tI2xFhXqXFqMM0IvxSYY3F7LIwv450h2ch3yD-lZ9HU=');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+	position: relative;
+}
+
+.flex-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* Explicitly set four columns */
+	gap: 10px;
+	width: calc(100% - 40px); /* Adjust width to account for margins */
+	margin: 0 auto; /* Center the gallery */
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.flex-gallery img {
+	width: 100%;
+	height: 90%;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.flex-gallery img:hover {
+	transform: scale(1.3);
+}
+
+#playlist {
+	background-image: url('https://stljewishlight.org/wp-content/uploads/2021/12/Yiddish-16x9-1.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: rgb(0, 0, 0);
+	padding: 20px;
+}
+
+#like {
+	background-image: url('https://scontent.fsdv1-2.fna.fbcdn.net/v/t39.30808-6/367747225_683751433778965_2273637001237679724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JpU1v06GwX8Q7kNvgEdFF5P&_nc_ht=scontent.fsdv1-2.fna&oh=00_AYDGwf3p_r1dyAQziHsTuJfCPr9OVmPjbMg4UpI3R1_Mvw&oe=665264BE');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+	position: relative;
+}
+
+#like h2 {
+	text-align: left;
+	margin: 0;
+	margin-left: 30%;
+	margin-bottom: 35%;
+	width: 100%;
+}
+
+.like-button-container {
+	position: absolute;
+	top: 180px;
+	left: 200px;
+}
+
+.like-button {
+	background-color: #2575fc;
+	color: white;
+	border: none;
+	padding: 15px 50px;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.like-button:hover {
+	background-color: #2196F3;
+}
+
+#qrcoder {
+	background-color: #009688;
+}
+
+#spa {
+	background-color: #673AB7;
+}
+
+#contact {
+	background-image: url('https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	padding: 20px;
+	position: relative;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: auto;
+	width: 100%;
+}
+
+label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+input, textarea, select, button {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 1em;
+	width: calc(100% - 22px);
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: vertical;
+	height: 150px;
+}
+
+button {
+	margin-top: 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 30%;
+	align-self: center;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+	#menu {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#menu li a {
+		width: 100%;
+		text-align: center;
+	}
 }
