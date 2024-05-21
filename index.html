@@ -61,10 +61,13 @@
 <section id="like" class="section">
   <h2>!גגנגן, תן לי לייק</h2>
   <div class="like-button-container">
-    <button class="like-button">👍 Like</button>
+    <!-- <button class="like-button">👍 Like</button> -->
+    <div class="fb-like" data-href="https://wed-2023.github.io/311394365/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
   </div>
-  <div class="fb-like" data-href="https://wed-2023.github.io/311394365/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
 </section>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v20.0" nonce="jqNPa0U5"></script>
 
 <section id="qrcoder" class="section">
   <h2>Scan My Code</h2>
@@ -120,5 +123,11 @@ $(document).scroll(function() {
   $('#menu').toggle($(this).scrollTop()>1000);
 });
 </script>
+
+
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="XYZ"></script>
+
 </body>
 </html>
