@@ -1,51 +1,60 @@
 body {
-	font-family: 'Gill Sans';
-	background: linear-gradient(to right, #6a11cb, #2575fc);
-	color: white;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+    font-family: 'Gill Sans';
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    min-width: 100vw;  /* Ensure the body takes up at least the full width of the viewport */
+    height: 100%;
+    width: 100%;
 }
 
+
 #menu {
-	font-family: 'Gill Sans';
-	display: flex;
-	justify-content: space-around;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #333;
-	z-index: 1000;
-	padding: 0.3% 0;
+    font-family: 'Gill Sans';
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 1% 0;
 }
 
 #menu ul {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	list-style: none;
+    display: flex;
+    justify-content: space-around; /* Space around the items */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 #menu li {
-	list-style-type: none;
+    list-style-type: none;
+    margin: 0 1%; /* Add some margin for better spacing */
 }
 
 #menu li a {
-	text-decoration: none;
-	color: white;
-	padding: 10px 15px;
-	display: block;
-	transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add border-radius transition */
-	border-radius: 10px; /* Add a default border-radius */
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%; /* Use percentages for padding */
+    display: block;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add border-radius transition */
+    border-radius: 10px; /* Add a default border-radius */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 #menu li a:hover {
-	background-color: #555;
-	color: rgb(137, 235, 209);
-	border-radius: 15px; /* Increase border-radius on hover */
+    background-color: #555;
+    color: rgb(137, 235, 209);
+    border-radius: 15px; /* Increase border-radius on hover */
 }
+
 
 .section {
 	min-height: 100vh;
