@@ -82,6 +82,8 @@ body {
 .about-container img {
 	align-self: flex-start;
 	margin-left: 20px;
+	max-width: 100%;
+	height: auto;
 }
 
 .about-container ul {
@@ -102,7 +104,7 @@ body {
 
 .flex-gallery {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr); /* Explicitly set four columns */
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns */
 	gap: 10px;
 	width: calc(100% - 40px); /* Adjust width to account for margins */
 	margin: 0 auto; /* Center the gallery */
@@ -112,7 +114,7 @@ body {
 
 .flex-gallery img {
 	width: 100%;
-	height: 90%;
+	height: 90%; /* Maintain aspect ratio */
 	display: block;
 	transition: transform 0.3s ease;
 }
@@ -148,10 +150,12 @@ body {
 	width: 100%;
 }
 
-.like-button-container {
-	position: absolute;
-	top: 180px;
-	left: 200px;
+.fb-like {
+	text-align: left;
+	margin: 0;
+	margin-left: 30%;
+	margin-bottom: 0%;
+	width: 100%;
 }
 
 .like-button {
@@ -234,8 +238,66 @@ button:hover {
 		align-items: center;
 	}
 
+	#menu ul {
+		flex-direction: column;
+	}
+
 	#menu li a {
 		width: 100%;
 		text-align: center;
 	}
+
+	.about-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-container img {
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+
+	#like h2, .fb-like {
+		margin-left: 0;
+		text-align: center;
+	}
 }
+
+@media (max-width: 480px) {
+	.section {
+		padding: 20px;
+	}
+}
+
+
+
+
+
+
+
+/* .about-container img {
+	align-self: flex-start;
+	margin-left: 20px;
+} */
+
+
+
+
+/* .flex-gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); Explicitly set four columns */
+	/* gap: 10px;
+	width: calc(100% - 40px); /* Adjust width to account for margins */
+	/* margin: 0 auto; /* Center the gallery */
+	/* padding: 10px;
+	box-sizing: border-box; */ 
+/* } */ 
+
+
+
+
+
+
+
+
+

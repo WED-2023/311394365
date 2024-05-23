@@ -2,6 +2,7 @@
 <html lang="he" dir="ltr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>About Me</title>
 </head>
@@ -60,10 +61,7 @@
 
 <section id="like" class="section">
   <h2>!גגנגן, תן לי לייק</h2>
-  <div class="like-button-container">
-    <!-- <button class="like-button">👍 Like</button> -->
-    <div class="fb-like" data-href="https://wed-2023.github.io/311394365/" data-width="" data-layout="button" data-action="like" data-size="large" data-share="true"></div>
-  </div>
+  <div class="fb-like" data-href="https://wed-2023.github.io/311394365/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
 </section>
 
 <div id="fb-root"></div>
@@ -71,7 +69,7 @@
 
 <section id="qrcoder" class="section">
   <h2>Scan My Code</h2>
-  <!-- Add content for the QR code section -->
+  <img src="https://github.com/WED-2023/311394365/blob/main/photos/qr_code_wed_2023.png?raw=true" alt="QR Code" width="300" height="300">
 </section>
 
 <section id="spa" class="section">
@@ -123,11 +121,6 @@ $(document).scroll(function() {
   $('#menu').toggle($(this).scrollTop()>1000);
 });
 </script>
-
-
-<!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="XYZ"></script>
 
 </body>
 </html>
