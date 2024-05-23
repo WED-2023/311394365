@@ -16,7 +16,7 @@ body {
 	width: 100%;
 	background-color: #333;
 	z-index: 1000;
-	padding: 10px 0;
+	padding: 0.3% 0;
 }
 
 #menu ul {
@@ -49,7 +49,7 @@ body {
 
 .section {
 	min-height: 100vh;
-	padding: 50px;
+	padding: 5% 2%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -63,7 +63,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
-	padding: 20px;
+	padding: 2%;
 	position: relative;
 	text-align: right;
 }
@@ -74,20 +74,20 @@ body {
 	align-items: flex-start;
 	width: 85%;
 	background-color: rgba(255, 255, 224, 0.9); /* Light brown background */
-	padding: 20px;
+	padding: 2%;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-container img {
 	align-self: flex-start;
-	margin-left: 20px;
-	max-width: 100%;
+	margin-left: 2%;
+	width: 30%;
 	height: auto;
 }
 
 .about-container ul {
-	padding-right: 20px;
+	padding-right: 2%;
 	list-style-type: disc; /* Bullets for list items */
 	color: #333; /* Darker text for better readability */
 }
@@ -98,23 +98,23 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
-	padding: 20px;
+	padding: 2%;
 	position: relative;
 }
 
 .flex-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid columns */
-	gap: 10px;
-	width: calc(100% - 40px); /* Adjust width to account for margins */
+	grid-template-columns: repeat(4, 1fr); /* Explicitly set four columns */
+	gap: 2%;
+	width: 96%; /* Adjust width to account for margins */
 	margin: 0 auto; /* Center the gallery */
-	padding: 10px;
+	padding: 2%;
 	box-sizing: border-box;
 }
 
 .flex-gallery img {
 	width: 100%;
-	height: 90%; /* Maintain aspect ratio */
+	height: auto;
 	display: block;
 	transition: transform 0.3s ease;
 }
@@ -129,7 +129,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: rgb(0, 0, 0);
-	padding: 20px;
+	padding: 2%;
 }
 
 #like {
@@ -138,7 +138,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
-	padding: 20px;
+	padding: 2%;
 	position: relative;
 }
 
@@ -162,8 +162,8 @@ body {
 	background-color: #2575fc;
 	color: white;
 	border: none;
-	padding: 15px 50px;
-	font-size: 18px;
+	padding: 3% 10%;
+	font-size: 1.8em;
 	cursor: pointer;
 	border-radius: 5px;
 	width: 100%;
@@ -175,10 +175,12 @@ body {
 
 #qrcoder {
 	background-color: #009688;
+	padding: 2%;
 }
 
 #spa {
 	background-color: #673AB7;
+	padding: 2%;
 }
 
 #contact {
@@ -187,38 +189,38 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	color: white;
-	padding: 20px;
+	padding: 2%;
 	position: relative;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
-	max-width: 600px;
+	max-width: 90%;
 	margin: auto;
 	width: 100%;
 }
 
 label {
-	margin-top: 10px;
+	margin-top: 2%;
 	font-weight: bold;
 }
 
 input, textarea, select, button {
-	margin-top: 5px;
-	padding: 10px;
+	margin-top: 2%;
+	padding: 2%;
 	font-size: 1em;
-	width: calc(100% - 22px);
+	width: calc(100% - 4%);
 	box-sizing: border-box;
 }
 
 textarea {
 	resize: vertical;
-	height: 150px;
+	height: 15vh; /* Use viewport height for better responsiveness */
 }
 
 button {
-	margin-top: 20px;
+	margin-top: 4%;
 	background-color: #4CAF50;
 	color: white;
 	border: none;
@@ -238,10 +240,6 @@ button:hover {
 		align-items: center;
 	}
 
-	#menu ul {
-		flex-direction: column;
-	}
-
 	#menu li a {
 		width: 100%;
 		text-align: center;
@@ -254,7 +252,7 @@ button:hover {
 
 	.about-container img {
 		margin-left: 0;
-		margin-bottom: 20px;
+		margin-bottom: 2%;
 	}
 
 	#like h2, .fb-like {
@@ -265,39 +263,6 @@ button:hover {
 
 @media (max-width: 480px) {
 	.section {
-		padding: 20px;
+		padding: 2%;
 	}
 }
-
-
-
-
-
-
-
-/* .about-container img {
-	align-self: flex-start;
-	margin-left: 20px;
-} */
-
-
-
-
-/* .flex-gallery {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr); Explicitly set four columns */
-	/* gap: 10px;
-	width: calc(100% - 40px); /* Adjust width to account for margins */
-	/* margin: 0 auto; /* Center the gallery */
-	/* padding: 10px;
-	box-sizing: border-box; */ 
-/* } */ 
-
-
-
-
-
-
-
-
-
