@@ -123,7 +123,7 @@ body {
 
 .flex-gallery img {
 	width: 100%;
-	height: auto;
+	height: 90%;
 	display: block;
 	transition: transform 0.3s ease;
 }
@@ -142,58 +142,151 @@ body {
 }
 
 #like {
-	background-image: url('https://scontent.fsdv1-2.fna.fbcdn.net/v/t39.30808-6/367747225_683751433778965_2273637001237679724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JpU1v06GwX8Q7kNvgEdFF5P&_nc_ht=scontent.fsdv1-2.fna&oh=00_AYDGwf3p_r1dyAQziHsTuJfCPr9OVmPjbMg4UpI3R1_Mvw&oe=665264BE');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
-	padding: 2%;
-	position: relative;
+    background-image: url('https://scontent.fsdv1-2.fna.fbcdn.net/v/t39.30808-6/367747225_683751433778965_2273637001237679724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JpU1v06GwX8Q7kNvgEdFF5P&_nc_ht=scontent.fsdv1-2.fna&oh=00_AYDGwf3p_r1dyAQziHsTuJfCPr9OVmPjbMg4UpI3R1_Mvw&oe=665264BE');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2%;
+    position: relative;
+    height: 100vh; /* Adjust the height to fill the viewport */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start horizontally */
+    align-items: flex-start; /* Align items to the start vertically */
 }
 
-#like h2 {
-	text-align: left;
-	margin: 0;
-	margin-left: 30%;
-	margin-bottom: 35%;
-	width: 100%;
+.like-container {
+    margin-left: 20%; /* Move container from left to middle */
+    margin-top: 20%; /* Move container from top to middle */
+    transform: translate(-20%, -20%); /* Adjust transform for finer control */
+    text-align: left;
+}
+
+.like-container h2 {
+    margin: 0;
 }
 
 .fb-like {
-	text-align: left;
-	margin: 0;
-	margin-left: 30%;
-	margin-bottom: 0%;
-	width: 100%;
+    margin-top: 10%; /* Space between text and like button */
 }
 
-.like-button {
-	background-color: #2575fc;
-	color: white;
-	border: none;
-	padding: 3% 10%;
-	font-size: 1.8em;
-	cursor: pointer;
-	border-radius: 5px;
-	width: 100%;
-}
 
-.like-button:hover {
-	background-color: #2196F3;
-}
 
 #qrcoder {
-	background-color: #009688;
-	padding: 2%;
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-#spa {
-	background-color: #673AB7;
-	padding: 2%;
-}
+
 
 #contact {
-	background-image: url('https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg');
+    background-image: url('https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+	max-height: 70%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+    padding: 2%;
+    border-radius: 10px;
+}
+
+label {
+    margin-top: 2%;
+    font-weight: bold;
+    color: white;
+}
+
+input, textarea, select, button {
+    margin-top: 2%;
+    padding: 1.5%;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+    height: 15vh; /* Use viewport height for better responsiveness */
+}
+
+button {
+    margin-top: 4%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    form {
+        max-width: 90%;
+        padding: 3%;
+    }
+
+    input, textarea, select, button {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 95%;
+        padding: 5%;
+    }
+
+    input, textarea, select, button {
+        font-size: 1.4em;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+#spa {
+	background-image: url('https://t3.ftcdn.net/jpg/01/14/54/20/360_F_114542045_xyGqZb4KhnN6EvEgBXrYVrdW67v5ncrb.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -202,76 +295,56 @@ body {
 	position: relative;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	max-width: 90%;
-	margin: auto;
+.qa-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .qa-container h3 {
+    color: #333;
+  }
+
+  .qa-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .qa-container table, .qa-container th, .qa-container td {
+    border: 1px solid #ddd;
+  }
+
+  .qa-container th, .qa-container td {
+    padding: 10px;
+    text-align: center;
+	color: black;
+  }
+
+  .qa-container th {
+    background-color: #3cd7cf;
+    color: white;
+  }
+
+  .qa-container p {
+    margin: 15px 0;
+    color: #333;
+  }
+
+  .video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	background: #000;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-}
-
-label {
-	margin-top: 2%;
-	font-weight: bold;
-}
-
-input, textarea, select, button {
-	margin-top: 2%;
-	padding: 2%;
-	font-size: 1em;
-	width: calc(100% - 4%);
-	box-sizing: border-box;
-}
-
-textarea {
-	resize: vertical;
-	height: 15vh; /* Use viewport height for better responsiveness */
-}
-
-button {
-	margin-top: 4%;
-	background-color: #4CAF50;
-	color: white;
-	border: none;
-	cursor: pointer;
-	border-radius: 5px;
-	width: 30%;
-	align-self: center;
-}
-
-button:hover {
-	background-color: #45a049;
-}
-
-@media (max-width: 768px) {
-	#menu {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#menu li a {
-		width: 100%;
-		text-align: center;
-	}
-
-	.about-container {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.about-container img {
-		margin-left: 0;
-		margin-bottom: 2%;
-	}
-
-	#like h2, .fb-like {
-		margin-left: 0;
-		text-align: center;
-	}
-}
-
-@media (max-width: 480px) {
-	.section {
-		padding: 2%;
-	}
+	height: 100%;
 }
