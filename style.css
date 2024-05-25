@@ -18,7 +18,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: url('https://img.freepik.com/photos-premium/texture-papier-gris-fonce-photo-haute-resolution_463999-2826.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716249600&semt=ais_user');
+  background-image: url('https://raw.githubusercontent.com/WED-2023/311394365/main/photos/menu-background.avif');
   background-color: #333;
   z-index: 1000;
   padding: 1% 0;
@@ -81,7 +81,7 @@ body {
 }
 
 #about {
-  background-image: url('https://translationconf.yiddish.paris/wp-content/uploads/2019/07/cropped-background_dark.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/about-background.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body {
 }
 
 #photos {
-  background-image: url('https://t3.ftcdn.net/jpg/01/14/54/20/360_F_114542045_xyGqZb4KhnN6EvEgBXrYVrdW67v5ncrb.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/photos-spa-background.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
 }
 
 #playlist {
-  background-image: url('https://cdn.vectorstock.com/i/1000v/93/81/vinyl-record-background-vector-899381.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/plalist-background.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,7 +162,7 @@ iframe {
 }
 
 #like {
-  background-image: url('/Users/odedatias/Downloads/emoji-framed-background/89766.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/like-background.jpg?raw=true');
   background-size: cover;
   color: white;
   position: relative;
@@ -203,7 +203,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://scontent.fsdv1-2.fna.fbcdn.net/v/t39.30808-6/367747225_683751433778965_2273637001237679724_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JpU1v06GwX8Q7kNvgEdFF5P&_nc_ht=scontent.fsdv1-2.fna&oh=00_AYDGwf3p_r1dyAQziHsTuJfCPr9OVmPjbMg4UpI3R1_Mvw&oe=665264BE');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/like-background-2.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -248,7 +248,7 @@ iframe {
 }
 
 #qrcoder {
-  background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/qr-background.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,7 +267,7 @@ iframe {
 }
 
 #contact {
-  background-image: url('https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg');
+  background-image: url('https://raw.githubusercontent.com/WED-2023/311394365/main/photos/contact-background.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ button:hover {
 }
 
 #spa {
-  background-image: url('https://t3.ftcdn.net/jpg/01/14/54/20/360_F_114542045_xyGqZb4KhnN6EvEgBXrYVrdW67v5ncrb.jpg');
+  background-image: url('https://github.com/WED-2023/311394365/blob/main/photos/photos-spa-background.jpeg?raw=true');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
