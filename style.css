@@ -93,8 +93,8 @@ body {
 
 .about-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 85%;
   background-color: rgba(255, 255, 224, 0.9);
   padding: 2%;
@@ -103,9 +103,10 @@ body {
 }
 
 .about-container img {
-  width: 100%;
+  align-self: flex-start;
+  margin-left: 2%;
+  width: 30%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .about-container ul {
@@ -122,13 +123,18 @@ body {
   color: white;
   padding: 2%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 
 .flex-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2%;
-  width: 96%;
+  gap: 10px; /* Increased gap to ensure no overflow */
+  width: 100%;
   margin: 0 auto;
   padding: 2%;
   box-sizing: border-box;
@@ -136,13 +142,13 @@ body {
 
 .flex-gallery img {
   width: 100%;
-  height: auto;
+  height: 90%;
   display: block;
   transition: transform 0.3s ease;
 }
 
 .flex-gallery img:hover {
-  transform: scale(1.1);
+  transform: scale(1.6);
 }
 
 #playlist {
@@ -152,12 +158,19 @@ body {
   background-repeat: no-repeat;
   color: rgb(0, 0, 0);
   padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 iframe {
   width: 100%;
   max-width: 700px;
-  height: 400px;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
 }
 
 #like {
@@ -176,6 +189,7 @@ iframe {
 .like-content {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   width: 100%;
   max-width: 900px;
   padding: 5px;
