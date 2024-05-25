@@ -93,8 +93,8 @@ body {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   width: 85%;
   background-color: rgba(255, 255, 224, 0.9);
   padding: 2%;
@@ -103,10 +103,9 @@ body {
 }
 
 .about-container img {
-  align-self: flex-start;
-  margin-left: 2%;
-  width: 30%;
+  width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .about-container ul {
@@ -137,13 +136,13 @@ body {
 
 .flex-gallery img {
   width: 100%;
-  height: 90%;
+  height: auto;
   display: block;
   transition: transform 0.3s ease;
 }
 
 .flex-gallery img:hover {
-  transform: scale(1.6);
+  transform: scale(1.1);
 }
 
 #playlist {
@@ -177,7 +176,6 @@ iframe {
 .like-content {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   width: 100%;
   max-width: 900px;
   padding: 5px;
