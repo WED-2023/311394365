@@ -102,7 +102,7 @@ body {
 }
 
 .about-container img {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-bottom: 2%;
 }
@@ -111,6 +111,7 @@ body {
   padding-right: 2%;
   list-style-type: disc;
   color: #333;
+  width: 100%;
 }
 
 #photos {
@@ -154,8 +155,9 @@ body {
 }
 
 iframe {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
 }
 
 #like {
