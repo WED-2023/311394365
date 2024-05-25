@@ -127,7 +127,7 @@ body {
 
 .flex-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2%;
   width: 96%;
   margin: 0 auto;
@@ -143,7 +143,7 @@ body {
 }
 
 .flex-gallery img:hover {
-  transform: scale(1.4);
+  transform: scale(1.6);
 }
 
 #playlist {
